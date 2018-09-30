@@ -66,24 +66,24 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         
 //        print(String(data: lobj_Request.httpBody!, encoding: String.Encoding.utf8))
 //        
-//        var task = session.dataTask(with: lobj_Request,completionHandler: { (data, response, error) in
-//            
-//            print(response)
-//        })
-//        task.resume()
-//        
-//        
-//        var task = session.dataTaskWithRequest(lobj_Request, completionHandler: {data, response, error -> Void in
-//            println("Response: \(response)")
-//            var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
-//            println("Body: \(strData)")
-//
-//            if error != nil
-//            {
-//                println("Error: " + error.description)
-//            }
-//
-//        })
+        var task = session.dataTask(with: lobj_Request,completionHandler: { (data, response, error) in
+            
+            print(response)
+        })
+        task.resume()
+        
+        
+        var task = session.dataTaskWithRequest(lobj_Request, completionHandler: {data, response, error -> Void in
+            println("Response: \(response)")
+            var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
+            println("Body: \(strData)")
+
+            if error != nil
+            {
+                println("Error: " + error.description)
+            }
+
+        })
     
     
     }
