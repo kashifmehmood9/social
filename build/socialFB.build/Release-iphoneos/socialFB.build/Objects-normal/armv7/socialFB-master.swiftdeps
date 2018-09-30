@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "e1250684571f9e92264694f53891d465"
+build_time: [1538298677, 670718000]
+inputs:
+  "/Users/kashif/Documents/social/socialFb/ViewController.swift": [9223372036, 854775807]
+  "/Users/kashif/Documents/social/socialFb/AppDelegate.swift": [9223372036, 854775807]
