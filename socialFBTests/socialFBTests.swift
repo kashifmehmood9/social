@@ -26,9 +26,6 @@ class socialFBTests: XCTestCase {
         URLSession.shared.dataTask(with: gitUrl) { (data, response
             , error) in
             
-             let httpResponse = response as! HTTPURLResponse
-             XCTAssert(httpResponse.statusCode == 404)
-            
                 promise.fulfill()
             }.resume()
         waitForExpectations(timeout: 10, handler: nil)
