@@ -13,7 +13,18 @@
 		4B337264214F9585005CD778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B337263214F9585005CD778 /* Assets.xcassets */; };
 		4B337267214F9585005CD778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B337265214F9585005CD778 /* LaunchScreen.storyboard */; };
 		4B337270214F9976005CD778 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B33726F214F9976005CD778 /* Social.framework */; };
+		4BE81879215D1D5000F0883D /* socialFBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE81878215D1D5000F0883D /* socialFBTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BE8187B215D1D5000F0883D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B337251214F9584005CD778 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B337258214F9584005CD778;
+			remoteInfo = socialFB;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4B337259214F9584005CD778 /* socialFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +35,10 @@
 		4B337266214F9585005CD778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B337268214F9585005CD778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B33726F214F9976005CD778 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4BE81867215D145000F0883D /* Directions.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Directions.geojson; sourceTree = "<group>"; };
+		4BE81876215D1D5000F0883D /* socialFBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = socialFBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE81878215D1D5000F0883D /* socialFBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = socialFBTests.swift; sourceTree = "<group>"; };
+		4BE8187A215D1D5000F0883D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BE8BEE1214FC58200A63FB5 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		4BE8BEE3214FC5AF00A63FB5 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -37,6 +52,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BE81873215D1D5000F0883D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				4B33725B214F9584005CD778 /* socialFb */,
+				4BE81877215D1D5000F0883D /* socialFBTests */,
 				4B33725A214F9584005CD778 /* Products */,
 				4B33726E214F9976005CD778 /* Frameworks */,
 			);
@@ -53,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				4B337259214F9584005CD778 /* socialFB.app */,
+				4BE81876215D1D5000F0883D /* socialFBTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +86,7 @@
 			children = (
 				4B33725C214F9584005CD778 /* AppDelegate.swift */,
 				4B33725E214F9584005CD778 /* ViewController.swift */,
+				4BE81867215D145000F0883D /* Directions.geojson */,
 				4B337260214F9584005CD778 /* Main.storyboard */,
 				4B337263214F9585005CD778 /* Assets.xcassets */,
 				4B337265214F9585005CD778 /* LaunchScreen.storyboard */,
@@ -78,6 +103,15 @@
 				4B33726F214F9976005CD778 /* Social.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BE81877215D1D5000F0883D /* socialFBTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BE81878215D1D5000F0883D /* socialFBTests.swift */,
+				4BE8187A215D1D5000F0883D /* Info.plist */,
+			);
+			path = socialFBTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +134,24 @@
 			productReference = 4B337259214F9584005CD778 /* socialFB.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4BE81875215D1D5000F0883D /* socialFBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BE8187D215D1D5000F0883D /* Build configuration list for PBXNativeTarget "socialFBTests" */;
+			buildPhases = (
+				4BE81872215D1D5000F0883D /* Sources */,
+				4BE81873215D1D5000F0883D /* Frameworks */,
+				4BE81874215D1D5000F0883D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BE8187C215D1D5000F0883D /* PBXTargetDependency */,
+			);
+			name = socialFBTests;
+			productName = socialFBTests;
+			productReference = 4BE81876215D1D5000F0883D /* socialFBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -112,6 +164,10 @@
 				TargetAttributes = {
 					4B337258214F9584005CD778 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					4BE81875215D1D5000F0883D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 4B337258214F9584005CD778;
 					};
 				};
 			};
@@ -129,6 +185,7 @@
 			projectRoot = "";
 			targets = (
 				4B337258214F9584005CD778 /* socialFB */,
+				4BE81875215D1D5000F0883D /* socialFBTests */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +201,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BE81874215D1D5000F0883D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -156,7 +220,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BE81872215D1D5000F0883D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BE81879215D1D5000F0883D /* socialFBTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BE8187C215D1D5000F0883D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B337258214F9584005CD778 /* socialFB */;
+			targetProxy = 4BE8187B215D1D5000F0883D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4B337260214F9584005CD778 /* Main.storyboard */ = {
@@ -330,6 +410,44 @@
 			};
 			name = Release;
 		};
+		4BE8187E215D1D5000F0883D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = socialFBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.socialFBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/socialFB.app/socialFB";
+			};
+			name = Debug;
+		};
+		4BE8187F215D1D5000F0883D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = socialFBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.socialFBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/socialFB.app/socialFB";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -347,6 +465,15 @@
 			buildConfigurations = (
 				4B33726C214F9585005CD778 /* Debug */,
 				4B33726D214F9585005CD778 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BE8187D215D1D5000F0883D /* Build configuration list for PBXNativeTarget "socialFBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BE8187E215D1D5000F0883D /* Debug */,
+				4BE8187F215D1D5000F0883D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
