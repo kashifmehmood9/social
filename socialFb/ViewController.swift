@@ -62,13 +62,6 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         
         let task = session.dataTask(with: lobj_Request)
         task.resume()
-        
-        
-//        print(String(data: lobj_Request.httpBody!, encoding: String.Encoding.utf8))
-//        
-
-    
-    
     }
    
     override func viewDidLoad() {
