@@ -16,7 +16,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     var songs = NSArray()
     
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
-        var parser = XMLParser(data:data )
+        let parser = XMLParser(data:data )
         parser.delegate = self
         parser.parse()
         
