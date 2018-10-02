@@ -28,7 +28,7 @@ class socialFBTests: XCTestCase {
             
              let httpResponse = response as! HTTPURLResponse
              XCTAssert(httpResponse.statusCode == 404)
-            XCTAssert(httpResponse.statusCode == 500)
+            
                 promise.fulfill()
             }.resume()
         waitForExpectations(timeout: 10, handler: nil)
