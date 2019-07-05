@@ -9,13 +9,28 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,aProtocol {
+    func aFunction() {
+        
+    }
+    
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+        func backward(_ s1: String, _ s2: String) -> Bool {
+            return s1 > s2
+        }
+        let reversedNames = names.sorted (by:{ (s1, s2) in
+             s1>s2
+        })
+        print(reversedNames)
+        
+        
         return true
     }
 

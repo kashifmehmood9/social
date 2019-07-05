@@ -10,7 +10,10 @@ import UIKit
 import Social
 import MediaPlayer
 
-
+protocol aProtocol
+{
+    func aFunction()
+}
 class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITableViewDataSource,UITableViewDelegate,URLSessionDataDelegate,XMLParserDelegate {
     @IBOutlet weak var table: UITableView!
     var songs = NSArray()
